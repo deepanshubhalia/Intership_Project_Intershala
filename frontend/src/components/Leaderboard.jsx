@@ -5,7 +5,7 @@ export default function Leaderboard({ refreshKey }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/leaderboard").then((res) => setData(res.data));
+    axios.get("https://intership-project-intershala.onrender.com/leaderboard").then((res) => setData(res.data));
   }, [refreshKey]);
 
   return (

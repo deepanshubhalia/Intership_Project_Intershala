@@ -6,7 +6,7 @@ export default function EntryForm({ onEntryAdded }) {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/add-entry", {
+      const res = await axios.post("https://intership-project-intershala.onrender.com/add-entry", {
         email,
         charity_id: "11111111-1111-1111-1111-111111111111",
       });

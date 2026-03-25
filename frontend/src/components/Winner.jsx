@@ -5,7 +5,7 @@ export default function Winner() {
   const [winner, setWinner] = useState(null);
 
   const getWinner = async () => {
-    const res = await axios.get("http://localhost:5000/winner");
+    const res = await axios.get("https://intership-project-intershala.onrender.com/winner");
     setWinner(res.data.winner);
   };
 
